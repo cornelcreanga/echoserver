@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class ReverseEchoController {
-    public static final String DEFAULT = "Hi, you might want to pass the text parameter :)";
+    public static final String DEFAULT = "Hi - you might want to pass the text parameter :)";
     @RequestMapping(value="/")
     public String reverseEcho(
             @RequestParam(name = "text",required = false,defaultValue = DEFAULT) String text) {
