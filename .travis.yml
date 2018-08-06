@@ -9,5 +9,6 @@ deploy:
   region: us-east-1
   app: reverse-echo
   env: reverse-echo-prod
+  bucket_name: "elasticbeanstalk-us-east-1-437550939845"
   on:
     repo: cornelcreanga/echoserver
