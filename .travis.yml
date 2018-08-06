@@ -2,6 +2,7 @@ language: java
 jdk:
 - oraclejdk8
 deploy:
+  skip_cleanup: true
   provider: elasticbeanstalk
   access_key_id: AKIAJ4O3ZGOIEVNFZ4JQ
   secret_access_key:
