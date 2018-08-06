@@ -47,7 +47,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
         </plugins>
+        <finalName>echoserver</finalName>
     </build>
-
 
 </project>

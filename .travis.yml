@@ -10,5 +10,6 @@ deploy:
   app: reverse-echo
   env: reverse-echo-prod
   bucket_name: "elasticbeanstalk-us-east-1-437550939845"
+  zip_file: 'target/echoserver.jar'
   on:
     repo: cornelcreanga/echoserver
