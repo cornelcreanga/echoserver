@@ -9,6 +9,7 @@ phases:
     commands:
     - echo Build completed on `date`
     - mvn package
+    - mv target/echoserver.jar echoserver.jar
 artifacts:
   files:
-  - target/echoserver.jar
+  - echoserver.jar
