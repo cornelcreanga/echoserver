@@ -6,11 +6,12 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class ReverseEchoController {
-    public static final String DEFAULT = "Hi - you might want to pass the text parameter :)";
+
+    private static final String DEFAULT_TEXT = "Hi - you might want to pass the text parameter :)";
     @RequestMapping(value="/")
     public String reverseEcho(
-            @RequestParam(name = "text",required = false,defaultValue = DEFAULT) String text) {
+            @RequestParam(name = "text",required = false,defaultValue = DEFAULT_TEXT) String text) {
 
-        return text.equals(DEFAULT)?DEFAULT:new StringBuilder(text).reverse().toString();
+        return text.equals(DEFAULT_TEXT)? DEFAULT_TEXT :new StringBuilder(text).reverse().toString();
     }
 }
